@@ -2,118 +2,501 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Minecraft uslubidagi zamonaviy portfolio">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Minecraft uslubidagi zamonaviy portfolio"
+  >
+
   <title>Minecraft Portfolio</title>
+
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+
+  <!-- BACKGROUND -->
   <div class="bg-grid"></div>
   <div class="particles" id="particles"></div>
 
+
+  <!-- =====================================================
+       NAVBAR
+       ===================================================== -->
+
   <header class="navbar">
-    <img src="./assets/logo.png" alt="">
-    <span>PORTFOLIO</span>
-    <button class="menu-btn" id="menuBtn" aria-label="Menyu">☰</button>
+
+    <a href="#home" class="logo-link">
+      <img
+        src="./assets/logo.png"
+        alt="Minecraft Portfolio"
+        href="#"
+      >
+    </a>
+
+    <span class="logo-text">
+      PORTFOLIO
+    </span>
+
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Menyu"
+    >
+      ☰
+    </button>
 
     <nav id="nav">
-      <a href="#home" class="active">Bosh sahifa</a>
-      <a href="#about">Haqimda</a>
-      <a href="#skills">Ko‘nikmalar</a>
-      <a href="#projects">Loyihalar</a>
-      <a href="#contact">Kontakt</a>
+
+      <a
+        href="#home"
+        class="active"
+      >
+        Bosh sahifa
+      </a>
+
+      <a href="#about">
+        Men Haqimda
+      </a>
+
+      <a href="#skills">
+        Ko‘nikmalar
+      </a>
+
+      <a href="#projects">
+        Loyihalar
+      </a>
+
+      <a href="#contact">
+        Kontakt
+      </a>
+
     </nav>
 
-    <a href="#contact" class="nav-cta">Bog‘lanish</a>
+    <a
+      href="#contact"
+      class="nav-cta"
+    >
+      Bog‘lanish
+    </a>
+
   </header>
 
+
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
+
   <main id="home">
+
+
+    <!-- ===================================================
+         HERO
+         =================================================== -->
+
     <section class="hero section">
+
       <div class="hero-copy reveal">
-        
-        <p class="hello">SALOM!</p>
-        <h1>MEN<br><span>Azamjonov Abdulloh</span></h1>
-        <div class="eyebrow"><span></span> MINECRAFT ko'rinishidagi PORTFOLIO</div>
-        <p class="hero-text">
-          Minecraft dunyosida ijod qilaman, web saytlar yarataman
-          va yangi loyihalarni sinab ko‘raman.
+
+        <p class="hello">
+          SALOM!
         </p>
-        
-        <div class="hero-buttons">
-          <a class="btn primary" href="#projects">⚔ LOYIHALARIM</a>
-          <a class="btn secondary" href="#about">▣ MEN HAQIMDA</a>
+
+        <h1>
+          MEN<br>
+          <span>
+            Azamjonov Abdulloh
+          </span>
+        </h1>
+
+        <div class="eyebrow">
+          <span></span>
+          MINECRAFT ko'rinishidagi PORTFOLIO
         </div>
+
+        <p class="hero-text">
+          Minecraft dunyosida ijod qilaman,
+          web saytlar yarataman va yangi
+          loyihalarni sinab ko‘raman.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            class="btn primary"
+            href="#projects"
+          >
+            ⚔ LOYIHALARIM
+          </a>
+
+          <a
+            class="btn secondary"
+            href="#about"
+          >
+            ▣ MEN HAQIMDA
+          </a>
+
+        </div>
+
+
+        <!-- STATS -->
 
         <div class="mini-stats">
-          <div><strong>25+</strong><span>Loyihalar</span></div>
-          <div><strong>3+</strong><span>Yil tajriba</span></div>
-          <div><strong>10K+</strong><span>Ko‘rishlar</span></div>
+
+          <div>
+            <strong>25+</strong>
+            <span>Loyihalar</span>
+          </div>
+
+          <div>
+            <strong>3+</strong>
+            <span>Yil tajriba</span>
+          </div>
+
+          <div>
+            <strong>10K+</strong>
+            <span>Ko‘rishlar</span>
+          </div>
+
         </div>
+
       </div>
+
+
+      <!-- HERO IMAGE -->
 
       <div class="hero-visual reveal">
+
         <div class="hero-image-wrap">
-          <img src="./assets/profil_1.png" alt="Viktor Minecraft qahramoni" class="hero-image">
+
+          <img
+            src="./assets/profil_1.png"
+            alt="Minecraft qahramoni"
+            class="hero-image"
+          >
+
         </div>
+
         <div class="image-glow"></div>
+
       </div>
+
     </section>
 
-    <section id="about" class="section about">
+
+    <!-- ===================================================
+         ABOUT
+         =================================================== -->
+
+    <section
+      id="about"
+      class="section about"
+    >
+
       <div class="section-title reveal">
+
         <span>01</span>
-        <div><p>PLAYER PROFILE</p><h2>MEN HAQIMDA</h2></div>
+
+        <div>
+          <p>PLAYER PROFILE</p>
+          <h2>MEN HAQIMDA</h2>
+        </div>
+
       </div>
+
 
       <div class="about-grid">
+
+
+        <!-- PROFILE -->
+
         <div class="profile-panel panel reveal">
-          <div class="profile-avatar"><img src="./assets/profil_2.png" alt="Abdulloh"></div>
+
+          <div class="profile-avatar">
+
+            <img
+              src="./assets/profil_2.png"
+              alt="Abdulloh"
+            >
+
+          </div>
+
           <div>
-            <h3>Abdulloh Azamjonov</h3>
-            <p class="muted">Minecraft Player • Developer</p>
+
+            <h3>
+              Abdulloh Azamjonov
+            </h3>
+
+            <p class="muted">
+              Minecraft Player • Developer
+            </p>
+
           </div>
-          <div class="online"><i></i> Hozir online</div>
+
+          <div class="online">
+            <i></i>
+            Hozir online
+          </div>
+
+
           <div class="profile-info">
-            <p><span>Sevimli o‘yin</span><b>Minecraft</b></p>
-            <p><span>Yo‘nalish</span><b>Web Development</b></p>
-            <p><span>Rejim</span><b>Survival / Creative</b></p>
+
+            <p>
+              <span>Sevimli o‘yin</span>
+              <b>Minecraft</b>
+            </p>
+
+            <p>
+              <span>Yo‘nalish</span>
+              <b>Web Development</b>
+            </p>
+
+            <p>
+              <span>Rejim</span>
+              <b>Survival / Creative</b>
+            </p>
+
           </div>
+
         </div>
+
+
+        <!-- ABOUT TEXT -->
 
         <div class="about-text reveal">
-          <div class="quote">“</div>
+
+          <div class="quote">
+            “
+          </div>
+
           <p>
-            Men yangi g‘oyalarni texnologiya bilan birlashtirishni yaxshi ko‘raman.
-            Minecraft — men uchun shunchaki o‘yin emas, balki ijod qilish uchun
-            katta dunyo.
+            Men yangi g‘oyalarni texnologiya bilan
+            birlashtirishni yaxshi ko‘raman.
+            Minecraft — men uchun shunchaki o‘yin emas,
+            balki ijod qilish uchun katta dunyo.
           </p>
+
           <p class="muted">
-            Web dasturlash, Minecraft loyihalari, dizayn va kontent yaratish
-            yo‘nalishlarida o‘zimni rivojlantiryapman.
+            Web dasturlash, Minecraft loyihalari,
+            dizayn va kontent yaratish yo‘nalishlarida
+            o‘zimni rivojlantiryapman.
           </p>
-          <div class="xp-line"><span>XP</span><div><i></i></div><b>82%</b></div>
+
+          <div class="xp-line">
+
+            <span>XP</span>
+
+            <div>
+              <i></i>
+            </div>
+
+            <b>82%</b>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section id="skills" class="section">
+
+    <!-- ===================================================
+         SKILLS
+         =================================================== -->
+
+    <section
+      id="skills"
+      class="section"
+    >
+
       <div class="section-title reveal">
+
         <span>02</span>
-        <div><p>MY INVENTORY</p><h2>KO‘NIKMALARIM</h2></div>
+
+        <div>
+          <p>MY INVENTORY</p>
+          <h2>KO‘NIKMALARIM</h2>
+        </div>
+
       </div>
+
 
       <div class="skills-grid">
-        <article class="skill panel reveal"><div class="icon grass">◆</div><div><h3>HTML / CSS</h3><p>Web sahifalar</p><div class="bar"><i style="width:95%"></i></div></div><b>95%</b></article>
-        <article class="skill panel reveal"><div class="icon command">⌘</div><div><h3>JavaScript</h3><p>Interaktiv saytlar</p><div class="bar"><i style="width:88%"></i></div></div><b>88%</b></article>
-        <article class="skill panel reveal"><div class="icon redstone">●</div><div><h3>Redstone</h3><p>Mexanizmlar</p><div class="bar"><i style="width:82%"></i></div></div><b>82%</b></article>
-        <article class="skill panel reveal"><div class="icon diamond">◆</div><div><h3>Minecraft</h3><p>Build / Survival</p><div class="bar"><i style="width:98%"></i></div></div><b>98%</b></article>
-        <article class="skill panel reveal"><div class="icon code">&lt;/&gt;</div><div><h3>React</h3><p>Frontend</p><div class="bar"><i style="width:78%"></i></div></div><b>78%</b></article>
-        <article class="skill panel reveal"><div class="icon video">▶</div><div><h3>Video montaj</h3><p>Kontent yaratish</p><div class="bar"><i style="width:86%"></i></div></div><b>86%</b></article>
+
+
+        <article class="skill panel reveal">
+
+          <div class="icon grass">
+            ◆
+          </div>
+
+          <div class="skill-content">
+
+            <h3>HTML / CSS</h3>
+
+            <p>
+              Web sahifalar
+            </p>
+
+            <div class="bar">
+              <i style="width:95%"></i>
+            </div>
+
+          </div>
+
+          <b>95%</b>
+
+        </article>
+
+
+        <article class="skill panel reveal">
+
+          <div class="icon command">
+            ⌘
+          </div>
+
+          <div class="skill-content">
+
+            <h3>JavaScript</h3>
+
+            <p>
+              Interaktiv saytlar
+            </p>
+
+            <div class="bar">
+              <i style="width:88%"></i>
+            </div>
+
+          </div>
+
+          <b>88%</b>
+
+        </article>
+
+
+        <article class="skill panel reveal">
+
+          <div class="icon redstone">
+            ●
+          </div>
+
+          <div class="skill-content">
+
+            <h3>Redstone</h3>
+
+            <p>
+              Mexanizmlar
+            </p>
+
+            <div class="bar">
+              <i style="width:82%"></i>
+            </div>
+
+          </div>
+
+          <b>82%</b>
+
+        </article>
+
+
+        <article class="skill panel reveal">
+
+          <div class="icon diamond">
+            ◆
+          </div>
+
+          <div class="skill-content">
+
+            <h3>Minecraft</h3>
+
+            <p>
+              Build / Survival
+            </p>
+
+            <div class="bar">
+              <i style="width:98%"></i>
+            </div>
+
+          </div>
+
+          <b>98%</b>
+
+        </article>
+
+
+        <article class="skill panel reveal">
+
+          <div class="icon code">
+            &lt;/&gt;
+          </div>
+
+          <div class="skill-content">
+
+            <h3>React</h3>
+
+            <p>
+              Frontend
+            </p>
+
+            <div class="bar">
+              <i style="width:78%"></i>
+            </div>
+
+          </div>
+
+          <b>78%</b>
+
+        </article>
+
+
+        <article class="skill panel reveal">
+
+          <div class="icon video">
+            ▶
+          </div>
+
+          <div class="skill-content">
+
+            <h3>Video montaj</h3>
+
+            <p>
+              Kontent yaratish
+            </p>
+
+            <div class="bar">
+              <i style="width:86%"></i>
+            </div>
+
+          </div>
+
+          <b>86%</b>
+
+        </article>
+
       </div>
+
     </section>
+
+
+    <!-- ===================================================
+         PROJECTS
+         =================================================== -->
 
     <section
       id="projects"
@@ -122,16 +505,16 @@
 
       <div class="latest-project reveal">
 
-
         <div class="latest-project-title">
-          <span>Latest</span> Project
+          <span>Latest</span>
+          Project
         </div>
 
 
         <div class="latest-project-grid">
 
 
-          <!-- YANDEX MARKET -->
+          <!-- PROJECT 1 -->
 
           <article class="latest-card">
 
@@ -157,7 +540,6 @@
 
             </div>
 
-
             <div class="latest-info">
 
               <h3>
@@ -173,8 +555,7 @@
           </article>
 
 
-
-          <!-- INSTAGRAM -->
+          <!-- PROJECT 2 -->
 
           <article class="latest-card">
 
@@ -200,7 +581,6 @@
 
             </div>
 
-
             <div class="latest-info">
 
               <h3>
@@ -216,8 +596,7 @@
           </article>
 
 
-
-          <!-- HAPPY BIRTHDAY -->
+          <!-- PROJECT 3 -->
 
           <article class="latest-card">
 
@@ -243,7 +622,6 @@
 
             </div>
 
-
             <div class="latest-info">
 
               <h3>
@@ -258,34 +636,108 @@
 
           </article>
 
-
         </div>
 
       </div>
 
     </section>
 
-    <section id="contact" class="section contact">
+
+    <!-- ===================================================
+         CONTACT
+         =================================================== -->
+
+    <section
+      id="contact"
+      class="section contact"
+    >
+
       <div class="contact-box panel reveal">
+
         <div>
-          <div class="eyebrow"><span></span> CONNECTION</div>
-          <h2>YANGI LOYIHA<br><span>BOSHLAYMIZMI?</span></h2>
-          <p>Birgalikda yangi Minecraft yoki web loyiha yaratamiz.</p>
+
+          <div class="eyebrow">
+            <span></span>
+            CONNECTION
+          </div>
+
+          <h2>
+            YANGI LOYIHA<br>
+            <span>
+              BOSHLAYMIZMI?
+            </span>
+          </h2>
+
+          <p>
+            Birgalikda yangi Minecraft yoki
+            web loyiha yaratamiz.
+          </p>
+
         </div>
+
+
         <div class="contacts">
-          <a href="https://t.me/" target="_blank"><span>✈</span> Telegram <b>↗</b></a>
-          <a href="https://youtube.com/" target="_blank"><span>▶</span> YouTube <b>↗</b></a>
-          <a href="https://github.com/" target="_blank"><span>◉</span> GitHub <b>↗</b></a>
+
+          <a
+            href="https://t.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>✈</span>
+            Telegram
+            <b>↗</b>
+          </a>
+
+          <a
+            href="https://youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>▶</span>
+            YouTube
+            <b>↗</b>
+          </a>
+
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>◉</span>
+            GitHub
+            <b>↗</b>
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
   <footer>
-    <span>◆ © 2026 Abdulloh Azamjonov</span>
-    <span>YARATILDI <b>♥</b> BILAN MINECRAFT USLUBIDA</span>
+
+    <span>
+      ◆ © 2026 Abdulloh Azamjonov
+    </span>
+
+    <span>
+      YARATILDI
+      <b>♥</b>
+      BILAN MINECRAFT USLUBIDA
+    </span>
+
   </footer>
 
-  <script src="script.js"></script>
+
+  <!-- JAVASCRIPT -->
+  <script src="./script.js"></script>
+
 </body>
 </html>
